@@ -19,6 +19,17 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        
+        <script type="template/html" id="toodleTemplate">
+
+        <% _.each(formArr, function(formArr, index, list){ %>
+
+            <li><%= formArr.stuff %></li> 
+
+        <% }); %>
+        </script>
+
+        
 
     </head>
     <body>
@@ -32,25 +43,34 @@
                 <h1 class="text-muted">t0d0odles</h1>
             <div class = "paper"> 
                 <div class="lines"> 
-                <ul class="listPaper">
-                    <li><input type="text" class="form-control" placeholder="Add Items Here!"></li>
-                    <li>Do Homework!</li>
-                    <li>Learn Code!</li>    
-                    <li>Have Fun!</li>
+                <p><input id="listdo" type="text" class="putItHere form-group has-success"></input>
+                <input type="button" class="btn btn-info btn-xs" value="Add New t0d0odle"></input></p>
+                <ul class="listPaper putItHere">
+                    <li>
+                    </li>
+                    <!-- <li><input type="text" placeholder="Add Items Here!" id="newToArr"></input></li> -->
+                    <!-- <form>
+                     <li><input type="text" placeholder="Add Items Here!" name="check" id="newToArr"></li>
+                 </form> -->
                 </ul>
                 </div> 
             </div>
-
             <div class="footer">
             
 
-                <div class="containerFooter">
+                <div class="containerFooter navbar-fixed-bottom">
+                
+                <button type="button" class="btn btn-default navbar-btn clear">Items Left</button>
+                <button type="button" class="btn btn-default navbar-btn">All</button>
+                <button type="button" class="btn btn-default navbar-btn">Active</button>
+                <button type="button" class="btn btn-default navbar-btn">Completed</button>
+                <button type="button" class="btn btn-default navbar-btn">Clear Completed</button>
 
-                    <ul>
+                   <!--  <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    </ul>
+                    </ul> -->
 
                 </div>
 
@@ -60,6 +80,7 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -90,7 +111,7 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
-        <script src="scripts/formthingy.js"></script>
+        <script src="scripts/formArr.js"></script>
         <!-- endbuild -->
 </body>
 </html>

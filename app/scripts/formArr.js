@@ -1,4 +1,4 @@
-var formthingy = [ 
+var formArr = [ 
 
 { stuff: "stuff 1"
 },
