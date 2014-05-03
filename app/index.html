@@ -29,53 +29,48 @@
         <% }); %>
         </script>
 
-        
-
     </head>
+
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
 
-        <div class="container">
+     <div class="container">
 
                 <h1 class="text-muted">t0d0odles</h1>
-            <div class = "paper"> 
-                <div class="lines"> 
-                <p><input id="listdo" type="text" class="putItHere form-group has-success"></input>
-                <input type="button" class="btn btn-info btn-xs" value="Add New t0d0odle"></input></p>
-                <ul class="listPaper putItHere">
-                    <li s>
-                    </li>
-                    <!-- <li><input type="text" placeholder="Add Items Here!" id="newToArr"></input></li> -->
-                    <!-- <form>
-                     <li><input type="text" placeholder="Add Items Here!" name="check" id="newToArr"></li>
-                 </form> -->
-                </ul>
-                </div> 
-            </div>
-            <div class="footer">
-            
-
-                <div class="containerFooter navbar-fixed-bottom">
+        <div class="containerNav">
+            <ul>
                 
-                <button type="button" class="btn btn-default navbar-btn clear">Items Left</button>
-                <button type="button" class="btn btn-default navbar-btn">All</button>
-                <button type="button" class="btn btn-default navbar-btn">Active</button>
-                <button type="button" class="btn btn-default navbar-btn">Completed</button>
-                <button type="button" class="btn btn-default navbar-btn">Clear Completed</button>
+                <li><button type="button" class="btn btn-default navbar-btn">Completed Count</button></li>
+                <li><button type="button" class="btn btn-default navbar-btn">All</button></li>
+                <li><button type="button" class="btn btn-default navbar-btn">Active</button></li>
+                <li><button type="button" class="btn btn-default navbar-btn">Completed</button></li>
+                <li><button type="button" class="btn btn-default navbar-btn">Clear Completed</button></li>
 
-                   <!--  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    </ul> -->
+            </ul>
+        </div>
 
-                </div>
-
-                <p><span class="glyphicon glyphicon-hand-up"></span>Double Click To Edit a t0d0odle!</p>
+        <div>
+            <div class="add">
+             <p>
+                <input id="listdo" type="text" class="putItHere form-group has-success">
+                </input>
+                <input type="button" class="btn btn-info btn-xs" value="Add New t0d0odle">
+                </input>
+            </p>
             </div>
+            
+                <ul class="list putItHere">
+                    <li class="stroked">
+                    </li>
+                </ul>
+
+                <div>
+                    <p class="glyphicon glyphicon-hand-up double">Double Click To Edit a t0d0odle!</p>
+                </div>
+                </div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->

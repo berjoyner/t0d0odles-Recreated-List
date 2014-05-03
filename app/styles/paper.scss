@@ -1,34 +1,87 @@
-.paper {
-  background-color: #ffffff;
-  width: 600px;
-  // margin: 0 auto;
-  margin-left: -50px;
+body {
+  background-color :#f5f5f5;
+  padding: 20px 50px;
 }
-
-.listPaper {
+h4 {
+  color: #cd0000;
+  font-size: 42px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+.list {
   color: #555;
-  font-size: 25px;
+  font-size: 22px;
   padding: 0 !important;
-  width: 700px;
   font-family: courier, monospace;
-  border: 3px solid #dedede;
+  border: 1px solid #dedede;
+  position: relative;
+  box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);   
 }
-
-.listPaper li {
+.list li {
   list-style: none;
   border-bottom: 1px dotted #ccc;
-  text-indent: 15px;
-  height: auto;
-  padding:30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 10px 5px 10px 50px;
   text-transform: capitalize;
-  padding-left:-70px;
 }
-
-.lines {
+.list li:hover {
+  background-color: #eee;
+  -webkit-transition: 0.2s;
+  -moz-transition:    0.2s;
+  -ms-transition:     0.2s;
+  -o-transition:      0.2s;
+}
+.list li:last-child {
+  border-bottom: 0;
+}
+.list:before {
+  content: "";
   border-left: 1px solid #ffaa9f;
   border-right: 1px solid #ffaa9f;
   width: 2px;
-  float: left;
-  height: 345px;
-  margin-left: 40px;
+  position: absolute;
+  height: 100%;
+  left: 25px;
 }
+
+
+// .paper {
+//   background-color: #ffffff;
+//   width: 600px;
+//   // margin: 0 auto;
+//   margin-left: -50px;
+// }
+
+// .listPaper {
+//   color: #555;
+//   font-size: 25px;
+//   padding: 0 !important;
+//   width: 700px;
+//   font-family: courier, monospace;
+//   border: 3px solid #dedede;
+// }
+
+// .listPaper li {
+//   list-style: none;
+//   border-bottom: 1px dotted #ccc;
+//   text-indent: 15px;
+//   height: auto;
+//   padding:30px;
+//   text-transform: capitalize;
+//   padding-left:-70px;
+// }
+
+// .lines {
+//   border-left: 1px solid #ffaa9f;
+//   border-right: 1px solid #ffaa9f;
+//   width: 2px;
+//   float: left;
+//   height: 345px;
+//   margin-left: 40px;
+// }
+
+// .lines p{
+// 	text-align: center;
+// }
