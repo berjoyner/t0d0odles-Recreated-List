@@ -23,5 +23,8 @@ $('.putItHere').html(newItem);
 
     $('li').click(function() {
     $(this).toggleClass('stroked');
+    $(this).find('span').toggleClass('glyphicon glyphicon-pushpin');
     });
 });
+
+// find/add class/span 
